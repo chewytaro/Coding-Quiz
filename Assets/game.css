@@ -1,0 +1,28 @@
+#question {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.choicecontainer {
+    color: black;
+    font-size: large;
+    background: white; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.choice-prefix {
+    background: lightpink;
+    padding: 20px;
+    margin: 20px;
+}
+
+.choice-text {
+    background-color: lightpink;
+    margin: 5px;
+}
