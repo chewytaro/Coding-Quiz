@@ -5,6 +5,15 @@
     padding: 40px;
 }
 
+.time {
+    color: rgb(247, 88, 114);
+    margin: 0;
+}
+
+.correctness {
+    color: rgb(247, 88, 114);
+}
+
 .choicecontainer {
     color: black;
     font-size: large;
