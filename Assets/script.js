@@ -52,7 +52,7 @@ function startGame () {
     setTime();
 };
 
-var secondsLeft = 90;
+var secondsLeft = 60;
 var timeEl = document.querySelector(".time");
 
 function setTime() {
@@ -60,21 +60,18 @@ function setTime() {
     var timerInterval = setInterval(function() {
       secondsLeft--;
       timeEl.textContent = secondsLeft + " seconds left to answer all the questions";
-
-  
-      if(secondsLeft === 0) {
+      if(secondsLeft === 0 || secondsLeft <= 0) {
         // Stops execution of action at set interval
         clearInterval(timerInterval);
         // Calls function to create and append image
         return window.location.assign("./end.html"); 
-      }
-  
+      } 
     }, 1000);
   }
 
 function getNewQuestions() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-        return window.location.assign("./end.html"); 
+        return window.location.assign("./highscores.html"); 
     }
     questionCounter++;
     var questionIndex = Math.floor(Math.random() * availableQuestions.length); 
@@ -88,7 +85,8 @@ function getNewQuestions() {
 
 //make it so that questions are not repeated
     availableQuestions.splice(questionIndex, 1);
-    acceptingAnswers = true; 
+    acceptingAnswers = true;
+    
 
 };
 
@@ -110,14 +108,16 @@ choices.forEach(choice => {
             secondsLeft -= 15;
             correctness.textContent = "Remember! -15 seconds for each wrong answer"
         }
-        
-        console.log(answerCorrectness);
 
         selectedChoice.parentElement.classList.add(answerCorrectness);
 
 
         getNewQuestions(); 
+        
     });
 });
+
+
+
 
 startGame();

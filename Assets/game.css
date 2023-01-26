@@ -6,12 +6,16 @@
 }
 
 .time {
-    color: rgb(247, 88, 114);
+    color: black;
     margin: 0;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 50px;
+    padding: 20px 0px; 
 }
 
 .correctness {
-    color: rgb(247, 88, 114);
+    color: rgb(224, 96, 96);
 }
 
 .choicecontainer {
@@ -24,6 +28,7 @@
     margin: 20px;
     margin-right: 150px;
     margin-left: 150px;
+    border-radius: 20px;
 
 }
 
@@ -37,6 +42,7 @@
     background: lightpink;
     padding: 20px;
     margin: 20px;
+    border-radius: 20px;
 }
 
 .choice-text {
