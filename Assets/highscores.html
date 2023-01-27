@@ -10,10 +10,20 @@
 <body>
     
     <div class="box">
-        <h1 id="text">Here are the top 5 scores!</h1>
+
+        <div id="name" style="display:block">
+        <input placeholder='EnterName' id="firstName"></input> 
+        <button id="initialsEnter">Finish!</button>
+        </div>
+
+        <div id="closing" style="display:none"> 
+        <h1 id="text">Thanks for Playing! Here are the top scores!</h1>
+        <ul id="scores"></ul>
         <div>
+            <button class="btn" id="clear" value="reset">Clear Scores and Play Again</button>
             <a class="btn" href="./game.html">PLAY AGAIN</a>
-            <a class="btn" href="/index.html">HOME</a>
+            <a class="btn" href="/Coding-Quiz/index.html">HOME</a>
+        </div>
         </div>
 
     </div>

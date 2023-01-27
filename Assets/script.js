@@ -71,7 +71,9 @@ function setTime() {
 
 function getNewQuestions() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+        localStorage.setItem("secondsLeft", secondsLeft);
         return window.location.assign("./highscores.html"); 
+        
     }
     questionCounter++;
     var questionIndex = Math.floor(Math.random() * availableQuestions.length); 
