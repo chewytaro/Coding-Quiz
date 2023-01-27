@@ -14,7 +14,7 @@ function saveData() {
     var initials = document.body.querySelector("#firstName").value;
     var secondsLeft = localStorage.getItem("secondsLeft"); 
     var obj = {secondsLeft, initials};
-   
+    var end = document.getElementById("text"); 
 
     if(!initials) {
         alert("Please input a name");
@@ -27,6 +27,7 @@ function saveData() {
     s.forEach(element => {
         score.innerHTML += `<div>${element.initials + " " + element.secondsLeft}</div>`
     });
+    end.textContent = ["Thanks for playing " + initials + "! Here is the scoreboard!" ];
     document.getElementById("name").style.display = "none";
     }
     
