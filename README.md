@@ -9,7 +9,7 @@ Here is the link to the page:
 https://chewytaro.github.io/Coding-Quiz/
 
 Here is what the main page should look like: 
-<img width="1169" alt="Screen Shot 2023-01-26 at 12 52 50 AM" src="https://user-images.githubusercontent.com/117787401/214794521-d2b0f43f-aff5-48c6-b5ec-166b47305963.png">
+<img width="1169" alt="Screen Shot 2023-01-26 at 9 22 02 PM" src="https://user-images.githubusercontent.com/117787401/215015410-be06691c-e5d3-4fba-9ecd-c9714c68e84a.png">
 
 Installation
 
@@ -26,3 +26,4 @@ N/A
 License
 
 Please refer to the LICENSE in the Repo.
+
