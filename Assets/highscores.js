@@ -14,12 +14,13 @@ function saveData() {
     var initials = document.body.querySelector("#firstName").value;
     var secondsLeft = localStorage.getItem("secondsLeft"); 
     var obj = {secondsLeft, initials};
-    storage.push(obj);
+   
+
     if(!initials) {
         alert("Please input a name");
         return;
     } else {
-    
+    storage.push(obj);
     localStorage.setItem("highscores", JSON.stringify(storage));
     var s = JSON.parse(localStorage.getItem("highscores"));
     document.getElementById("closing").style.display = "block";
@@ -27,7 +28,6 @@ function saveData() {
         score.innerHTML += `<div>${element.initials + " " + element.secondsLeft}</div>`
     });
     document.getElementById("name").style.display = "none";
-    
     }
     
 }
